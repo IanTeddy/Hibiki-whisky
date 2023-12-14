@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <!-- Meta setting -->
+    <meta charset="utf-8">
+    <title>Contact | HIBIKI</title>
+    <meta name="description" content="Final Assignment">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Mei Hirata / Megumi Kabasawa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add CSS file -->
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+    <!-- Favicon setting -->
+    <link rel="shortcut icon" href="images/HibikiLogo.png" type="image/x-icon">
+    <link rel="icon" type="image/svg" href="images/HibikiLogo.png" sizes="16x16">
+    <link rel="icon" type="image/svg" href="images/HibikiLogo.png" sizes="32x32">
+
+    <!-- Add Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Caveat&family=Cormorant+Garamond:wght@300;600;700&family=Exo:wght@100;700&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,400;1,300&family=Montserrat:wght@500&family=Pacifico&family=Roboto+Mono:wght@700&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header setting -->
+    <header>
+        <div class="header">
+            <nav class="nav">
+                <ul class="nav_menu">
+                    <a href="#default" class="logo"><img src="images/ft_logo_pc.png" alt="logo"></a>
+                    <li class="nav_item"><a class="nav_link" href="index.html">Home</a></li>
+                    <li class="nav_item"><a class="nav_link" href="product.html">Product</a></li>
+                    <li class="nav_item"><a class="nav_link" href="about.html">About</a></li>
+                    <li class="nav_item"><a class="nav_link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="head_img">
+        <div class="title">
+            <h1>Contact Us</h1>
+            <p>Tell us a bit about yourself, and we'll get in touch as soon as we can. </p>
+        </div>
+    </div>
+
+    <div id="contents">
+        <!-- grid-left -->
+        <div class="grid-left">
+            <div class="img-box">
+                <img src="images/IMG_9075.jpg" alt="hibiki spring" class="spring">
+                <div class="overlay">Spring</div>
+            </div>
+            <div class="img-box">
+                <img src="images/IMG_9072.jpg" alt="hibiki summer">
+                <div class="overlay">Summer</div>
+            </div>
+            <div class="img-box">
+                <img src="images/IMG_9076.jpg" alt="hibiki fall">
+                <div class="overlay">Fall</div>
+            </div>
+            <div class="img-box">
+                <img src="images/IMG_9077.jpg" alt="hibiki winter">
+                <div class="overlay">Winter</div>
+            </div>
+        </div>
+        <!-- grid-right -->
+        <div class="grid-right">
+            <div class="contact">
+                <div class="form-title">
+                    <h2>Contact Customer Support</h2>
+                    <img src="images/ft_logo_pc.png" alt="logo" class="logo"> 
+                </div>
+                <form action="#" method="post">
+                    <div class="row">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="First and Last name" required>
+                    </div>
+                    <div class="row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="hibiki@email.com" required>
+                    </div>
+                    <div class="row">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="000-000-0000" required>
+                    </div>
+                    <div class="row">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Let us know what you need help with" required></textarea>
+                    </div>
+                    <div class="row">
+                        <label for="evaluation">How do you like this website?</label>
+                        <select id="evaluation" name="evaluation" required>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="poor">Poor</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <button type="submit" onclick="thanksMsg()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+                <div class="logo_area">
+                    <img class="footer-logo" src="images/ft_logo_pc.png" alt="Company Logo">
+                </div>
+                <div class="company-info">
+                    <p>SUNTORY HOLDINGS LIMITED </p>
+                    <p>CEO: Takeshi Niinami</p>
+                    <p>HQ: 2-1-40 Dojimahama, Kita-ku, Osaka 530-8203, Japan</p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 SUNTORY HIBIKI</p>
+    </footer>
+
+    <script>
+        function thanksMsg() {
+            alert("Thank you for your message");
+          }
+    </script>
+</body>
