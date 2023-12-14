@@ -132,11 +132,8 @@ html {
     padding: 5% calc(50% - 20em) 35%;
     position: relative;
     z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr 2f;
-    gap: 1vw;
   }
-  main p, h2{
+  main p, main h2{
     color: rgb(48, 48, 48);
   }
   main h2 {
@@ -224,9 +221,39 @@ html {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+/* Call to action */
+.sign-up-container {
+  background-color: #3d000070;
+  padding: 3vw 18vw;
+  background-position: left;
+}
+.sign-up {
+  text-align: center;
+  width:50vw;
+  margin: 0 auto;
+  background-image: url(images/blend_foot.jpeg);
+  background-position: right;
+}
+
+.sign-up h2, .sign-up p {
+  color:white;
+  padding: 1em;
+}
+
+
+.sign-up button {
+  margin:1.5em;
+  padding:1em;
+  background-color: #AC3841;
+  color: white;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  border-radius: .2em;
+}
+button:hover {
+  background-color: white;
+  color: black;
 }
 
 /* footter section start↓↓↓ */
@@ -258,4 +285,22 @@ footer{
   font-size: small;
   text-align: right;
   margin-right: 2em;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 768px) {
+  .text {font-size: 11px}
+  main {
+    padding: 5% 10% 35%;
+  }
+  .main-text {
+    padding:.5em;
+    background-color: rgba(255,255,255,0.8);
+  }
+  .sign-up-container {
+    padding: 0 auto;
+  }
+  .sign-up {
+    width: 100%;
+  }
 }
