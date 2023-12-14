@@ -1,0 +1,380 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/* header section start↓↓↓*/
+header {
+    background-color: rgba(32, 32, 32, 0.634);
+    /* background-color: #3D0000; */
+  }
+  header a{
+    color: #fff;
+  }
+  header img{
+      width: 3rem;
+      text-align: center;
+  }
+  header nav{
+    height: auto;
+    padding: 1em;
+    margin-left: 1.5em;
+  }
+
+  .header a:hover {
+    color: white;
+    background-color:#950101;
+  }
+
+  .nav_menu {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .nav_item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .nav_link {
+    display: block;
+    text-decoration: none;
+    color: #950101;
+    text-align: center;
+    padding: .5vw;
+    margin: 0 1em;
+  }
+  
+  .nav_link:hover {
+    text-decoration: none;
+  }
+  /* header section end ↑↑↑*/
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    color:white;
+}
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+}
+
+/* section 1 */
+.section_1 {
+    text-align: center;
+}
+
+#head-area {
+    background-image: url('./images/head-img-product.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 20vw; 
+    padding:3vw 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    width: 30vw;
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding: .7em 10em;
+    text-align: left;
+}
+
+.title h1 {
+    padding:.5em 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4vw;
+}
+
+
+.section_1 h2 {
+    padding-top: 2em;
+    padding-bottom: .5em;
+    letter-spacing: .1em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#bottles {
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    padding: 2em 12em 3em 12em;
+    z-index: 100;
+    border-bottom: 1px solid grey;
+}
+
+.bottle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.bottle a {
+    display: block;
+    position: relative;
+}
+
+.bottle img {
+    width:17vw;
+    filter: drop-shadow(0 0 0.75rem rgb(86, 86, 86));
+    transition: transform 0.5s ease;
+    border: 0.25vw solid transparent;   
+    margin-bottom: 1.3em;
+}
+
+.bottle img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 0.9rem rgb(86, 86, 86));
+    border: 0.25vw solid transparent;
+}
+
+.bottle p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+}
+
+
+/* section */
+.each_section {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-bottom: 2em;
+    height: 100vh; /* set one screen*/
+}
+
+.obi {
+    padding:5vw 0;
+}
+.pink_bg {
+    background-image: url('./images/pink_bg.jpeg');
+}
+.navy_bg {
+    background-image: url('images/watermark_bg.jpeg');
+}
+
+.orange_bg {
+    background-image: url('./images/orange_bg.jpeg');
+}
+.gold_bg {
+    background-image: url('./images/gold_bg.jpeg');
+}
+
+/* each details styling */
+.product_detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 3vw 9vw;
+    padding-bottom: 2em;
+}
+
+.each_section h2 {
+    font-size: 2vw;
+    text-align: center;
+    padding:.5em;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #e0e0e0;
+}
+
+/* span styling */
+.hibiki{ 
+  font-family: 'Noto Serif JP', serif;
+}
+.number {
+    font-family: serif;
+    font-weight: 500;
+}
+
+
+.descri {
+    padding:.5em;
+}
+    .intro {
+        padding: 1em .5em 2.5em 0;
+        line-height: 2;
+    }
+
+    .view_img {
+        text-align: center;
+        position: relative;
+    }
+
+    .view_img img {
+        width:25vw;
+        filter: drop-shadow(0 0 0.75rem rgb(86, 86, 86));
+    }
+    .view_img:hover img{
+        opacity: 0; 
+        animation: fadeIn 1.5s ease-in-out forwards; 
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+
+    
+    .tasting_note {
+        padding: 1em 0;
+    }
+
+    .tasting_note h4 {
+        opacity: 0.8;
+        font-size: 1.5vw;
+    }
+
+    .note_harmony {
+        color:#EF9BBC;
+    }
+    .note_blender {
+        color: #AF93C6;
+    }
+    .note_21 {
+        color: #FD6D4B;
+    }
+    .note_30 {
+        color:#E4D204;
+    }
+    .tasting_note p {
+        padding:.7em 0;
+        line-height: 1.5;
+    }
+
+
+table {
+    border-collapse: collapse;
+    width: 38vw;
+    margin: 1em 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+}
+
+tr {
+    border: 1px solid #dddddd;
+    border-left: none;
+    border-right: none;
+}
+
+th, td {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: .7em;
+}
+
+th {
+    width:8vw;
+    border-right: 1px dotted #dddddd;
+    font-weight: 300;
+}
+
+
+.view_img img[alt="blenders_choice_hibiki"]
+ {
+    width: 27vw;
+}
+.view_img img[alt="30_years_old_hibiki"]{
+    width:30vw;
+}
+
+/* footter section start↓↓↓ */
+footer{
+    border-top: 2px solid #3d0000;
+    padding: 2em 0;
+    background-image: url(images/footer_bg_1.png);
+    background-size:20vw;
+    background-position: left center;
+    background-repeat:no-repeat;
+  }
+  .footer-container {
+    display: flex;
+    margin: 0 10vw;;
+    align-items: center;
+  }
+  .logo_area {
+    margin: 0 3vw;
+  }
+  .footer-logo{
+    width: 10vw;
+    display: block;
+  }
+  .company-info{
+    line-height: 2;
+    margin-left: 1vw;
+    font-size: 1vw;
+  }
+  .copyright {
+    font-size: small;
+    text-align: right;
+    margin-right: 2em;
+  }
+
+/* style mobile device */
+@media only screen and (max-width: 600px) {
+    /* section 1 */
+    .section_1 h2 {
+        padding-top: 1em;
+    }
+    .title {
+        padding:.7em 3em ;
+    }
+    .title p {
+        font-size: smaller;
+    }
+    #bottles {
+        padding:1.3em 2em;
+    }
+
+    .each_section {
+        height: auto;
+    }
+    .each_section h2 {
+        font-size: 1em;
+    }
+
+    .view_img {
+        padding-top: .5em;
+    }
+    .product_detail {
+        margin:0 5em;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .intro {
+        padding: 0;
+    }
+    .tasting_note {
+        margin:1em 0;
+    }
+    .tasting_note h4 {
+        font-size: 1em;
+    }
+    table {
+        width:100%;
+    }
+}
