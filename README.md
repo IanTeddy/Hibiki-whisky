@@ -1,1 +1,3 @@
-<h1>🥃 Introducing a website for"Hibiki" - Your Gateway to Japanese Whisky Excellence! 🇯🇵✨</h1>
+<h1>🥃 Introducing a website for"HIBIKI"</h1>
+<p> - Your Gateway to Japanese Whisky Excellence! 🇯🇵✨</p>
+
