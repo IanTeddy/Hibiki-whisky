@@ -1,3 +1,7 @@
 <h1>🥃 Japanese Whisky "HIBIKI" Website</h1>
-<p>Welcome to the Japanese whisky HIBIKI website repository! This website is dedicated to showcasing and promoting the exquisite range of Hibiki whiskies from the renowned SUNTORY distillery. Whether you're a whisky enthusiast, collector, or just curious about the art of Japanese whisky-making, this website provides a comprehensive platform to explore the rich history and exceptional craftsmanship behind SUNTRY's Hibiki brand.</p>
+<p>Welcome to the Japanese Whisky HIBIKI website repository! 
+  The website design was created with an image of harmony to fully utilize Japanese-ness. 
+  We have integrated the glorious history of HIBIKI with distinct Japanese design elements, harmonizing them with the unique flavors of each whisky type.
+</p>
 
+<h2>Technologies</h2>
